@@ -1,55 +1,50 @@
-# W600 Arduino 入门指南
+# W600 Arduino Getting Started Guide
 
-## 1.简介
+## 1. Introduction
 
-[Arduino](https://baike.baidu.com/item/Arduino) 是一款便捷灵活、方便上手的开源电子原型平台。现在，W600芯片可以直接支持Arduino环境开发，开发者可以使用熟悉的Arduino函数和库编写代码，并直接在W600上面运行，无需外部微控制器。让开发者更便捷进行产品设计。
+[Arduino](https://baike.baidu.com/item/Arduino) is a convenient, flexible, and easy-to-use open-source electronic prototyping platform. Now, the W60x chip directly supports Arduino development, allowing developers to write code using familiar Arduino functions and libraries and run it directly on the W60x without an external microcontroller. This makes product design easier for developers.
 
-## 2.准备工作
+## 2. Prerequisites
 
--  1 x W600 开发板（推荐使用 [TB-01](http://shop.thingsturn.com)）
--  1 × Micro USB B 电缆
--  1 × PC（目前仅 Windows 环境可用）
+-  1 x W60x development board [TB-01 recommended](http://shop.thingsturn.com)）
+-  1 × Micro USB B cable
+-  1 × PC（Currently only available for Windows environments）
 
-## 3. 环境搭建
+## 3. Environment Setup
 
-1. 通过 https://www.arduino.cc/en/Main/Software 下载 Arduino IDE 开发环境，建议使用最新版本。
-2. 启动 Arduino，并打开“首选项”窗口。在附加开发板管理器网址中添加`http://arduino.w600.fun/package_w600_index.json`
+1. Download the Arduino IDE development environment from https://www.arduino.cc/en/Main/Software. It is recommended to use the latest version.
+
+2. Power on the Arduino and open the "Preferences" window. Add the following URL to the Attach Board Manager: `http://arduino.w600.fun/package_w600_index.json`
 ![](doc/img/1556334078542.png)
-3. 打开菜单【工具】-》【开发板】-》【开发板管理器】
 
-![1556334412321](doc/img/1556334412321.png)
+3. Open the menu: Tools -> Development Board -> Development Board Manager
+![](doc/img/1556334412321.png)
 
-4. 在输入框中填入关键词 `w600` 选择最新版本（`当前为0.2.4`）,点击【安装】
+4. Enter keywords in the input box, `w600` w600select the latest version `0.2.4`）, and click [Install].
+![](doc/img/1556334650002.png)
+![](doc/img/1556335438851.png)
 
-![1556334650002](doc/img/1556334650002.png)
+5. Select the TB-01 development board and configure its parameters (note the importance of selecting the correct communication port and speed).
+![](doc/img/1556335475972.png)
 
-![1556335438851](doc/img/1556335438851.png)
+**Port:** You can check the corresponding port in your computer's Device Manager.
 
-5. 选择 TB-01 开发板 ，并配置开发板参数（注意选择正确的通信端口以及速率）
- ![1556335475972](doc/img/1556335475972.png)
+**Upload Speed:** The communication rate during burning, the default is 2Mbps, you can choose 115200 if the download fails.
 
-**端口：**可查看电脑设备管理器进行对应
+**Upload Files:** Download file format (default is IMG; if the download fails or secboot needs to be updated, you can select FLS).
+![](doc/img/28194943723.jpeg)
 
-**Upload Speed：**烧录时的通信速率，默认为2Mbps，如果下载失败可选择115200。
+6. Selecting "File" -> "Examples" allows you to try out some examples for flashing tests, such as "Blink".
+![](doc/img/1556335587121.png)
 
-**Upload Files：**下载文件格式（默认为IMG，如果下载失败或需要更新secboot，可选择FLS）
+7. Click Upload to download the firmware.
+![](doc/img/1556438775082.png)
 
- ![](doc/img/28194943723.jpeg)
+8.  The result after running is as follows
+![](doc/img/1556415104023.png)
 
-6. 选择【文件】-》【示例】，可以尝试一些示例进行烧录测试，如【Blink】
+Meanwhile, you can see the indicator lights on the development board flashing continuously.
 
-   ![1556335587121](doc/img/1556335587121.png)
+## 4. Other
 
-7. 点击Upload 进行固件下载
-
-      ![1556438775082](doc/img/1556438775082.png)
-
-8.  运行后效果如下
-
-![1556415104023](doc/img/1556415104023.png)
-
-​	同时，可以看到开发板上面的指示灯在不停的闪烁。
-
-## 4 其他
-
-有任何疑问和建议，可在问答社区 https://ask.w600.fun 提出问题。
+For any questions or suggestions, please ask them at the Q&A community https://ask.w600.fun
