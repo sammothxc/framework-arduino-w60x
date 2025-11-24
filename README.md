@@ -6,7 +6,7 @@
 
 ## 2. Prerequisites
 
--  1 x W60x development board [TB-01 recommended](http://shop.thingsturn.com)）
+-  1 x W60x development board, [TB-01 recommended](http://shop.thingsturn.com)
 -  1 × Micro USB B cable
 -  1 × PC（Currently only available for Windows environments）
 
