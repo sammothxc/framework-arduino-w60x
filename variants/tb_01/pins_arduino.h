@@ -132,11 +132,11 @@
 #define PWM4    PB_15
 #define PWM5    PB_14
 
-#define LED1    PIN_B14
-#define LED2    PIN_B15
-#define LED3    PIN_B16
-#define LED4    PIN_B17
-#define LED5    PIN_B18
+#define LED1    16
+#define LED2    10
+#define LED3    13
+#define LED4    12
+#define LED5    11
 
 static int get_w60x_pin_via_digitalPin(uint32_t ulPin)
 {
