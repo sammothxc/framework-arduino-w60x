@@ -1,4 +1,4 @@
-| W600 芯片管脚 | SDK 中使用的宏符号 | WIO W600 Arduino BSP 中可用的宏符号 <br>（不包括 Arduino 标准定义） | Arduino 定义的接口 | Arduino 官方示例引用方法 |
+| W600 chip pins | Macro symbols used in the SDK | Macro symbols available in the W600 Arduino BSP (excluding Arduino standard definitions) | Arduino-defined interface  | How to reference the official Arduino examples |
 | ------------- | -------------------- | ------------------------------------------------------------ | ------------------ | ------------------------ |
 | PB_6          | WM_IO_PB_06          | PIN_B6/PB_6/GPIOPB6                                          | D2                 | 2                        |
 | PB_7          | WM_IO_PB_07          | PIN_B7/PB_7/GPIOPB7/USER_BTN/USER/SW2                        | D6                 | 6                        |
