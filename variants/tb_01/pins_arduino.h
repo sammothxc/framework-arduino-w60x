@@ -118,11 +118,6 @@
 #define GPIOPB17    PB_17
 #define GPIOPB18    PB_18
 
-#define LED_BUILTIN         PB_17
-#define LED_RED             PB_16
-#define LED_BLUE            PB_18
-#define LED_GREEN           LED_BUILTIN
-
 #define USER_BTN            PIN_B7
 #ifndef USER_BTN_PRESS
 #define USER_BTN_PRESS      0
@@ -139,6 +134,12 @@
 #define PWM3    PB_16
 #define PWM4    PB_15
 #define PWM5    PB_14
+
+#define LED1    PB_18
+#define LED2    PB_17
+#define LED3    PB_16
+#define LED4    PB_15
+#define LED5    PB_14
 
 static int get_w60x_pin_via_digitalPin(uint32_t ulPin)
 {
