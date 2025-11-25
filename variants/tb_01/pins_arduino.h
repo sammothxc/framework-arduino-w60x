@@ -135,8 +135,8 @@
 #define LED1    PIN_B14
 #define LED2    PIN_B15
 #define LED3    PIN_B16
-#define LED4    PIN_B15
-#define LED5    PIN_B14
+#define LED4    PIN_B17
+#define LED5    PIN_B18
 
 static int get_w60x_pin_via_digitalPin(uint32_t ulPin)
 {
