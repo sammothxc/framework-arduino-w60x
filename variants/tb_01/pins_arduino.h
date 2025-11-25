@@ -97,12 +97,9 @@
 #define PB_13       PIN_B13  /* D17 */
 #define PB_14       PIN_B14  /* D16 */
 #define PB_15       PIN_B15  /* D10 */
-#define PB_16               PIN_B16
-//#define PB_16         /* D13 */
-#define PB_17               PIN_B17
-//#define PB_17         /* D12 */
-#define PB_18               PIN_B18
-//#define PB_18       11    /* D11 */
+#define PB_16       PIN_B16  /* D13 */
+#define PB_17       PIN_B17  /* D12 */
+#define PB_18       PIN_B18  /* D11 */
 
 #define GPIOPB6     PB_6
 #define GPIOPB7     PB_7
@@ -135,11 +132,11 @@
 #define PWM4    PB_15
 #define PWM5    PB_14
 
-#define LED1    PB_18
-#define LED2    PB_17
-#define LED3    PB_16
-#define LED4    PB_15
-#define LED5    PB_14
+#define LED1    PIN_B14
+#define LED2    PIN_B15
+#define LED3    PIN_B16
+#define LED4    PIN_B15
+#define LED5    PIN_B14
 
 static int get_w60x_pin_via_digitalPin(uint32_t ulPin)
 {
