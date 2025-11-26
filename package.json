@@ -1,18 +1,16 @@
 {
-  "name": "framework-arduino-w60x",
-  "version": "1.300.0",
+  "name": "framework-arduinow60x",
+  "version": "1.301.0",
   "description": "Arduino framework for W60X (W600/W601) chips",
   "keywords": [
     "arduino",
     "w600",
-    "w601",
+    "w60x",
     "winner micro"
   ],
-  "homepage": "https://github.com/sammothxc/framework-arduino-w60x",
-  "license": "MIT",
-  "system": [
-    "windows",
-    "linux",
-    "darwin"
-  ]
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sammothxc/framework-arduinow60x"
+  }
 }
